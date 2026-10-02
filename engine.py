@@ -1,9 +1,11 @@
 import os
+def clear_terminal():
+  os.system('cls' if os.name == 'nt' else 'clear')
 
 class menu:
     def __init__(self):
         self.mood = False
-        self. genre = False
+        self.genre = False
         self.playlist_total = False
         self.exit =False
 
